@@ -16,6 +16,7 @@ Implementamos otimização de CSS para melhorar a velocidade de carregamento da 
 ## Como Baixar e Utilizar
 
 1. **Clone o repositório:**
+git clone (https://github.com/MrHoneys/PlayVideos.git)
 
 2. **Abra o projeto:**
 - Navegue até o diretório onde o projeto foi clonado.
