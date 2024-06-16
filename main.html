@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importa o CSS do Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Importa o Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Importa o CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Meu Site de Vídeos</title>
+</head>
+
+<body class="dark-mode"> <!-- Classe para definir o modo escuro -->
+
+    <!-- Cabeçalho da página -->
+    <header class="bg-black text-white p-3 text-center">
+        <h1 class="logo"><span class="hot">Play</span><span class="brasil">Brasil</span></h1> <!-- Logo do site -->
+        <button id="toggle-mode" class="btn btn-outline-light">Modo Claro</button> <!-- Botão para alternar o modo claro/escuro -->
+
+        <!-- Container de busca -->
+        <div class="search-container">
+            <i class="fas fa-search search-icon" onclick="toggleSearch()"></i> <!-- Ícone de busca -->
+            <input type="text" id="searchInput" class="search-input" placeholder="Pesquisar vídeos..." style="display: none;"> <!-- Campo de entrada de busca -->
+        </div>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main class="container mt-4 main-content">
+        <!-- Filtros de vídeos por categoria -->
+        <div class="text-center mb-4">
+            <button class="btn btn-outline-light filter-btn" data-categoria="A">A</button>
+            <button class="btn btn-outline-light filter-btn" data-categoria="B">B</button>
+            <button class="btn btn-outline-light filter-btn" data-categoria="C">C</button>
+            <button class="btn btn-outline-light filter-btn" data-categoria="D">D</button>
+            <button class="btn btn-secondary filter-btn" data-categoria="">Mostrar Todos</button> <!-- Botão para mostrar todos os vídeos -->
+        </div>
+        
+        <!-- Container onde os vídeos serão inseridos pelo JavaScript -->
+        <div id="videos" class="row">
+            <!-- Vídeos serão inseridos aqui pelo JavaScript -->
+        </div>
+
+        <!-- Paginação -->
+        <div class="pagination">
+            <button class="btn btn-primary" id="prevBtn">Voltar</button> <!-- Botão de voltar na paginação -->
+            <button class="btn btn-primary" id="nextBtn">Próximo</button> <!-- Botão de próximo na paginação -->
+        </div>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer class="bg-black text-white text-center p-3">
+        <div>
+            <p>&copy; 2024 HOTNexus. Todos os direitos reservados.</p> <!-- Copyright -->
+            <p>Desenvolvido por <a href="#">TECH BRASIL</a></p> <!-- Desenvolvedor -->
+        </div>
+    </footer>
+
+    <!-- Scripts necessários para o funcionamento do Bootstrap e funcionalidades adicionais -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script> <!-- Script personalizado -->
+</body>
+</html>
