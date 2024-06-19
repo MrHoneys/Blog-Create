@@ -1,6 +1,6 @@
-# PlayVideos 🎥
+# BlogCreate 🎥
 
-PlayVideos é uma plataforma dinâmica para vídeos onde você pode descobrir e compartilhar uma variedade de conteúdos. Explore uma vasta biblioteca de vídeos organizados por gênero para encontrar exatamente o que você está procurando! Adicione seus próprios vídeos ou escolha entre uma seleção diversificada de conteúdos criados por outros usuários. Com recursos de pesquisa avançada, encontrar vídeos que correspondam aos seus interesses nunca foi tão fácil. Junte-se a nós e mergulhe em um mundo de entretenimento visual no PlayVideos!
+✨ Apresento um projeto de site de blog onde você pode explorar uma diversidade de temas interessantes. Os usuários têm a opção de navegar por menus temáticos e utilizar uma busca avançada 🔍 para encontrar conteúdos específicos. Descubra novos artigos de forma intuitiva e dinâmica. Vamos explorar juntos o mundo dos blogs! 📚
 
 ## Ferramentas Utilizadas
 
@@ -23,5 +23,9 @@ git clone (https://github.com/MrHoneys/PlayVideos.git)
 - Abra o arquivo `index.html` no seu navegador web.
 
 ## Screenshots
-![1](https://github.com/MrHoneys/PlayVideos/assets/143344101/1ad7c337-9458-4308-a47d-42208b0a97fb)
-![2](https://github.com/MrHoneys/PlayVideos/assets/143344101/bc421d8f-47f3-4565-afe7-e5582c082020)
+![01](https://github.com/MrHoneys/Blog-Create/assets/143344101/f484d73b-191a-420e-8ac8-cc4848e0da7a)
+![02](https://github.com/MrHoneys/Blog-Create/assets/143344101/12b2aa39-ca0f-43d2-9da5-c69e09dae778)
+![03](https://github.com/MrHoneys/Blog-Create/assets/143344101/78f32f57-d44d-42db-9f90-e4dba2a5feab)
+![04](https://github.com/MrHoneys/Blog-Create/assets/143344101/1cb34f9c-3095-4901-95ba-9b279bba553b)
+![05](https://github.com/MrHoneys/Blog-Create/assets/143344101/7ca9f9a2-5606-445d-9cf6-43147f128aa2)
+![06](https://github.com/MrHoneys/Blog-Create/assets/143344101/d4ec6015-7c3e-4308-a852-8c7ba6ec433e)
