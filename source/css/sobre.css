@@ -1,0 +1,41 @@
+/* CONFIG PADRÃO */
+body {
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+.header {
+    background-color: #121212;
+    color: white;
+    padding: 20px 0;
+}
+
+.header .logo {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header .logo .nexus {
+    color: red;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    color: white;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #121212;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 0;
+}

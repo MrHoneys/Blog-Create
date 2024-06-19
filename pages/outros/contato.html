@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato RadIT Crew</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../source/css/contato.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container text-center">
+            <span class="logo">
+                <span class="nexus">RadIT</span> Crew
+            </span>
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- MAIN CONTENT -->
+    <main class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h2 class="text-center mb-4">Entre em Contato</h2>
+                <form action="salvar_mensagem.php" method="post">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea class="form-control" id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Botão de Voltar para o Home -->
+        <div class="row mt-3">
+            <div class="col text-center">
+                <a href="../../main.htm" class="btn btn-secondary">Voltar para o Home</a>
+            </div>
+        </div>
+    </main>
+    <!-- END MAIN CONTENT -->
+
+    <!-- FOOTER -->
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2024 RadIT Crew. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../../source/js/contato.js"></script>
+</body>
+
+</html>

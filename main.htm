@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="source/css/style.css">
+    <title>Home RadIT Crew </title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container text-center">
+            <span class="logo">
+                <span class="nexus">RadIT</span> Crew
+            </span>
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="filterCards('pentest')">Pentest</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="filterCards('dorks')">Dorks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="filterCards('malwares')">Malwares</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="filterCards('all')">Mostrar Tudo</a>
+                    </li>
+                </ul>
+                <!-- Barra de Pesquisa -->
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2 search-bar" type="search" placeholder="Pesquisar"
+                        aria-label="Pesquisar">
+                    <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <!-- Fim Barra de Pesquisa -->
+            </div>
+        </div>
+    </nav>
+    <!-- END BARRA DE NAVEGAÇÃO -->
+
+<!-- Pop-up de Boas-Vindas -->
+<div id="welcomePopup" class="welcome-popup">
+    <div class="welcome-content">
+        <h2>Bem-vindo ao RadIT Crew!</h2>
+        <p>Aqui você encontra artigos e informações sobre pentest, dorks, malwares e muito mais.</p>
+        <button class="btn btn-outline-danger start-btn" onclick="closeWelcomePopup()">Começar!</button>
+    </div>
+</div>
+
+    <!-- CARDS DE BLOG -->
+    <section class="container">
+        <div class="row card-container">
+
+            <!-- BLOG 1 -->
+            <div class="col-md-4 card-item" data-category="pentest" data-aos="fade-up">
+                <div class="card show">
+                    <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                        <a href="pages/post/postagem1.html" class="btn btn-outline-danger custom-btn">Acessar</a>
+                    </div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0HK3BSkz6sGxklCPdp8PGnvz1uydL-SNF1w&s"
+                        class="card-img-top" alt="Imagem 1" loading="lazy">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do Artigo 1</h5>
+                        <p class="card-text">Descrição curta do artigo 1.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- BLOG 2-->
+            <div class="col-md-4 card-item" data-category="pentest" data-aos="fade-up">
+                <div class="card show">
+                    <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                        <a href="#" class="btn btn-outline-danger custom-btn">Acessar</a>
+                    </div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0HK3BSkz6sGxklCPdp8PGnvz1uydL-SNF1w&s"
+                        class="card-img-top" alt="Imagem 1" loading="lazy">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do Artigo 2</h5>
+                        <p class="card-text">Descrição curta do artigo 1.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BLOG 3-->
+            <div class="col-md-4 card-item" data-category="pentest" data-aos="fade-up">
+                <div class="card show">
+                    <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                        <a href="#" class="btn btn-outline-danger custom-btn">Acessar</a>
+                    </div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0HK3BSkz6sGxklCPdp8PGnvz1uydL-SNF1w&s"
+                        class="card-img-top" alt="Imagem 1" loading="lazy">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do Artigo 3</h5>
+                        <p class="card-text">Descrição curta do artigo 1.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BLOG 4-->
+            <div class="col-md-4 card-item" data-category="pentest" data-aos="fade-up">
+                <div class="card show">
+                    <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                        <a href="#" class="btn btn-outline-danger custom-btn">Acessar</a>
+                    </div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0HK3BSkz6sGxklCPdp8PGnvz1uydL-SNF1w&s"
+                        class="card-img-top" alt="Imagem 1" loading="lazy">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do Artigo 4</h5>
+                        <p class="card-text">Descrição curta do artigo 1.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BLOG 5-->
+            <div class="col-md-4 card-item" data-category="pentest" data-aos="fade-up">
+                <div class="card show">
+                    <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                        <a href="#" class="btn btn-outline-danger custom-btn">Acessar</a>
+                    </div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0HK3BSkz6sGxklCPdp8PGnvz1uydL-SNF1w&s"
+                        class="card-img-top" alt="Imagem 1" loading="lazy">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do Artigo 5</h5>
+                        <p class="card-text">Descrição curta do artigo 1.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more card-item divs as needed -->
+        </div>
+        <div class="pagination-buttons text-center">
+            <button class="btn btn-outline-danger" id="prevBtn" onclick="changePage(-1)">Voltar</button>
+            <button class="btn btn-outline-danger" id="nextBtn" onclick="changePage(1)">Próximo</button>
+        </div>
+    </section>
+    <!-- END CARDS DE BLOG -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <!-- SOBRE  -->
+                <div class="col-md-3 footer-about">
+                    <h4>Sobre Nós</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac vehicula leo. Phasellus
+                        iaculis ligula in risus egestas, et vulputate lacus viverra.</p>
+                </div>
+                <!-- OUTROS LINKS -->
+                <div class="col-md-3 footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="main.htm">Home</a></li>
+                        <li><a href="pages/outros/sobre.html">Sobre</a></li>
+                        <li><a href="#">Serviços</a></li>
+                        <li><a href="pages/outros/contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <!-- CONTATOS-->
+                <div class="col-md-3 footer-contact">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123, Cidade</p>
+                    <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+                    <p><i class="fas fa-envelope"></i> contato@exemplo.com</p>
+                </div>
+                <!-- SOCIAL MIDIA-->
+                <div class="col-md-3 footer-social">
+                    <h4>Redes Sociais</h4>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center footer-copyright">
+                    <p>&copy; 2024 RadIT Crew. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÃO DE VOLTAR AO TOPO -->
+    <button onclick="topFunction()" id="backToTopBtn" title="Voltar ao Topo"><i class="fas fa-arrow-up"></i></button>
+
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="source/js/script.js"></script>
+</body>
+
+</html>
